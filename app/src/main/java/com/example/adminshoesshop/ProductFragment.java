@@ -121,6 +121,7 @@ public class ProductFragment extends Fragment {
     }
 
     private void eventChangeListener() {
+        productList.clear();
         db.collection("AllProduct").addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {

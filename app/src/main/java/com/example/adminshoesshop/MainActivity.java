@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), NavigateActivity.class);
                     intent.putExtra("user",user);
                     binding.progressBar.setVisibility(View.INVISIBLE);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Wrong Password", Toast.LENGTH_LONG).show();

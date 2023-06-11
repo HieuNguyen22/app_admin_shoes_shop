@@ -75,6 +75,7 @@ public class OrderFragment extends Fragment {
     }
 
     private void getData() {
+        orderList.clear();
         db.collection("CurrentUser").addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {

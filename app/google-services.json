@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "273086997297",
+    "firebase_url": "https://shoesshop-5da2f-default-rtdb.firebaseio.com",
+    "project_id": "shoesshop-5da2f",
+    "storage_bucket": "shoesshop-5da2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273086997297:android:cdf966375c9042de4c4610",
+        "android_client_info": {
+          "package_name": "com.example.adminshoesshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273086997297-iomakajrj8vqdcm9pj0dlaubnhldq0k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuypL4OYASH0ywQiPgFXHnP6XBbsG-rZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273086997297-iomakajrj8vqdcm9pj0dlaubnhldq0k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273086997297:android:7577c5da5adf0e454c4610",
+        "android_client_info": {
+          "package_name": "com.example.doan_ltddnc_appbantaphoa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273086997297-v6gh06h15b0lskqgdsbpmc82hopc3via.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.doan_ltddnc_appbantaphoa",
+            "certificate_hash": "49b72d75a5335474e43f35ed17b8683e83a1fad6"
+          }
+        },
+        {
+          "client_id": "273086997297-iomakajrj8vqdcm9pj0dlaubnhldq0k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuypL4OYASH0ywQiPgFXHnP6XBbsG-rZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273086997297-iomakajrj8vqdcm9pj0dlaubnhldq0k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273086997297:android:9e16d869ad2082fa4c4610",
+        "android_client_info": {
+          "package_name": "com.example.doantotnghiep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273086997297-iomakajrj8vqdcm9pj0dlaubnhldq0k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuypL4OYASH0ywQiPgFXHnP6XBbsG-rZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273086997297-iomakajrj8vqdcm9pj0dlaubnhldq0k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

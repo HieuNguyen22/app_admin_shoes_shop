@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cart_recycler_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="27dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/rolled_rice" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:theme="@style/RatingBar"
+                        android:numStars="5"
+                        android:rating="4"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_dish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Sneaker Nike Air Jordan"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/prod_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Giày Jordan cổ cao nam nữ đen trắng, giày sneaker Nike Air Jordan 1 JD 1 Panda cổ cao 2021. Đế giày sneaker nam nữ làm từ cao su bền chắc, có độ bám cao. Shop cam kết. Về giá cả: Chúng tôi là công ty trực tiếp sản xuất nên chi phí giày sneaker nam"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        android:minWidth="70dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:id="@+id/total_dish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="2dp"
+                            android:text="800000"
+                            android:textColor="@color/red"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/dollar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VND"
+                            android:textStyle="bold"
+                            android:textColor="@color/red"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price_dish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="2dp"
+                            android:text="920000"
+                            android:textColor="@color/text_color"
+                            android:textStyle="italic"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/dollar2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VND"
+                            android:textStyle="italic"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

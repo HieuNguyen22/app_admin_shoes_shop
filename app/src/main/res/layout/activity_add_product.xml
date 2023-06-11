@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AddProductActivity">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="17dp"
+                        android:src="@drawable/ic_back_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Add product"
+                        android:textColor="@color/main_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="18dp"
+                        android:paddingRight="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Title"
+                                android:textColor="@color/main_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/prod_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:backgroundTint="@color/main_color"
+                                android:drawablePadding="15dp"
+                                android:drawableTint="@color/main_color"
+                                android:ems="10"
+                                android:hint="Product title"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@color/main_color"
+                                android:textColorHint="@color/pink_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Image"
+                                android:textColor="@color/main_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/prod_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:backgroundTint="@color/main_color"
+                                android:drawablePadding="15dp"
+                                android:drawableTint="@color/main_color"
+                                android:ems="10"
+                                android:hint="Product Image URL"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@color/main_color"
+                                android:textColorHint="@color/pink_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Desctipyion"
+                                android:textColor="@color/main_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/prod_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:backgroundTint="@color/main_color"
+                                android:drawablePadding="15dp"
+                                android:drawableTint="@color/main_color"
+                                android:ems="10"
+                                android:hint="Product Description"
+                                android:inputType="text"
+                                android:maxLines="5"
+                                android:textColor="@color/main_color"
+                                android:textColorHint="@color/pink_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Type"
+                                android:textColor="@color/main_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/prod_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:backgroundTint="@color/main_color"
+                                android:drawablePadding="15dp"
+                                android:drawableTint="@color/main_color"
+                                android:ems="10"
+                                android:hint="Product type"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@color/main_color"
+                                android:textColorHint="@color/pink_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price"
+                                android:textColor="@color/main_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/prod_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:backgroundTint="@color/main_color"
+                                android:drawablePadding="15dp"
+                                android:drawableTint="@color/main_color"
+                                android:ems="10"
+                                android:hint="Product price"
+                                android:inputType="number"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/main_color"
+                                android:textColorHint="@color/pink_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fixed price"
+                                android:textColor="@color/main_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/prod_fixed_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:backgroundTint="@color/main_color"
+                                android:drawablePadding="15dp"
+                                android:drawableTint="@color/main_color"
+                                android:ems="10"
+                                android:hint="Product fixed price"
+                                android:inputType="number"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/main_color"
+                                android:textColorHint="@color/pink_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Rating"
+                                android:textColor="@color/main_color"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:id="@+id/prod_rating"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5"
+                                android:stepSize="1"
+                                android:theme="@style/RatingBar" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <Button
+                                android:id="@+id/btn_add"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#E42021"
+                                android:text="ADD"
+                                android:textColor="@color/white" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

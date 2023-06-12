@@ -154,7 +154,7 @@ public class ProductFragment extends Fragment {
                             fetchedProduct.setPrice(numberValue);
                         }
 
-                        Object fetchedPrice1 = dc.getDocument().get("price");
+                        Object fetchedPrice1 = dc.getDocument().get("price_1");
                         if (fetchedPrice1 instanceof String) {
                             String stringValue = (String) fetchedPrice1;
                             fetchedProduct.setPrice_1(Long.parseLong(stringValue));

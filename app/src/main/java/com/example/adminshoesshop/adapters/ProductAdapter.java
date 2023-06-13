@@ -3,7 +3,10 @@ package com.example.adminshoesshop.adapters;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,12 +47,26 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         this.productList = productList;
     }
 
+    private boolean isHttp(String url) {
+        String[] parts = url.split(":");
+        if (parts[0].equals("https") || parts[0].equals("http"))
+            return true;
+        else return false;
+    }
+
     @Override
     public void onBindViewHolder(@NonNull ProductAdapter.ProductViewHolder holder, int position) {
         ProductModel product = productList.get(position);
         db = FirebaseFirestore.getInstance();
 
-        Picasso.get().load(product.getImg_url()).into(holder.image);
+        if (!isHttp(product.getImg_url())) {
+            byte[] decodedString = Base64.decode(product.getImg_url(), Base64.DEFAULT);
+            Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+            holder.image.setImageBitmap(decodedByte);
+        } else {
+            Picasso.get().load(product.getImg_url()).into(holder.image);
+        }
+
         holder.name.setText(product.getName());
         holder.price1.setText(product.getPrice() + "");
         holder.price2.setText(String.valueOf(product.getPrice_1()));

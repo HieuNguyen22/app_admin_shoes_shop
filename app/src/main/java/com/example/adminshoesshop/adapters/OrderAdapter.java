@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.adminshoesshop.R;
@@ -65,7 +66,10 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
         }
         holder.status.setText(order.getStatus() + "");
         holder.total.setText(order.getTotalAmount());
-        holder.listView.setAdapter(new CustomListAdapter(context, order.getCartList()));
+
+        holder.listView.setLayoutManager(new LinearLayoutManager(context));
+        OrderProductAdapter orderProductAdapter = new OrderProductAdapter(context, order.getCartList());
+        holder.listView.setAdapter(orderProductAdapter);
 
         holder.btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,7 +120,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
 
     public class OrderViewHolder extends RecyclerView.ViewHolder {
         TextView address, total, tvStatus, status, date, time, userId;
-        ListView listView;
+        RecyclerView listView;
         Button btnUpdate;
 
         public OrderViewHolder(@NonNull View itemView) {

@@ -82,7 +82,7 @@ public class OrderFragment extends Fragment {
                 for (DocumentChange dc : value.getDocumentChanges()) {
                     if (dc.getType() == DocumentChange.Type.ADDED) {
                         String userId = dc.getDocument().getId();
-
+                        System.out.println("------- USER ID: " + userId);
                         db.collection("CurrentUser").document(userId).collection("MyOrder").addSnapshotListener(new EventListener<QuerySnapshot>() {
                             @Override
                             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
